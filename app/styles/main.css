@@ -1,5 +1,7 @@
 @import url('homePage.css');
-
+.header{
+ border-bottom:2px solid blue;
+}
 .navBar {
  display:inline-block;
 }
@@ -8,7 +10,11 @@
 }
 .mediaIcons{
  display:inline-block;
+ float:right;
 }
 .mediaIcons li{
  display:inline-block;
+}
+.footer{
+ border-top:2px solid blue;
 }

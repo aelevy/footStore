@@ -23,9 +23,9 @@
     <!-- Add your site or application content here -->
   <div class="container-fluid">
    <div class="row">
-    <div class="col-lg-2"></div>
-     <!-- HEADER STARTS HERE -->
-    <div class="col-lg-8">
+    <!-- HEADER STARTS HERE -->
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
      <div class="header">
       <img src="http://placehold.it/145x60" alt="Store Logo">
       <ul class="navBar">
@@ -47,37 +47,52 @@
       </ul>
      </div>
     </div>
-    <!-- HEADER ENDS HERE -->
-    <div class="col-lg-2"></div>
+    <div class="col-lg-1"></div>
    </div>
+   <!-- HEADER ENDS HERE -->
 
+   <!-- START OF DONT TOUCH THIS -->
    <div class="row">
 
-   <div class="col-lg-2"></div>
-
-   <div class="col-lg-8">
+   <div class="col-lg-1"></div>
+   <!-- THIS IS WHERE THE VIEWS (PAGES) ARE LOADED -->
+   <div class="col-lg-10">
      <div ng-view=""></div>
    </div>
 
-   <div class="col-lg-2"></div>
+   <div class="col-lg-1"></div>
 
   </div>
+  <!--  END OF DONT TOUCH THIS -->
 
+  <!-- FOOTER STARTS HERE -->
    <div class="row">
-    <div class="col-lg-2"></div>
-    <div class="col-lg-8">
-     <!-- FOOTER STARTS HERE -->
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
     <div class="footer">
      <div class="col-lg-6">
       <div class="row"><h2>Store Locations</h2></div>
       <div class="col-lg-6">
        <h3>The Foot Store</h3>
+       <ul>
+       <li><b>843-849-1108</b></li>
+       <li>1901 N.Highway 17 <br> Mt.Pleasant, SC 29646 <br> Tuesday - Saturday<br> 10 AM - 6 PM</li>
+       <li>footstore@footstore.com</li>
+       <li>843-849-1170(fax)</li>
+      </ul>
       </div>
       <div class="col-lg-6">
        <h3>The Foot Store North</h3>
+       <ul>
+        <li><b>843-747-0602</b></li>
+        <li>3471 W. Montague Avenue <br> N. Charleston, SC 29418 <br> Tuesday - Saturday<br> 10 AM - 6 PM</li>
+        <li>footstore@footstore.com</li>
+        <li>843-747-0604(fax)</li>
+       </ul>
       </div>
      </div>
      <div class="col-lg-6">
+      <div class="row">
       <ul class="mediaIcons">
        <li><img src="http://placehold.it/45x45" alt="Facebook"></li>
        <li><img src="http://placehold.it/45x45" alt="Twitter"></li>
@@ -85,12 +100,17 @@
        <li><img src="http://placehold.it/45x45" alt="Instagram"></li>
       </ul>
      </div>
+     <div class="col-lg-12">
+      <img src="https://placehold.it/300x250" alt="">
+     </div>
+     </div>
     </div>
-    <!-- FOOTER ENDS HERE -->
    </div>
-    <div class="col-lg-2"></div>
+    <div class="col-lg-1"></div>
    </div>
   </div>
+  <!-- FOOTER ENDS HERE -->
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
