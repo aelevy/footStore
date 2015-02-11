@@ -1,0 +1,14 @@
+@import url('homePage.css');
+
+.navBar {
+ display:inline-block;
+}
+.navBar li{
+ display:inline-block;
+}
+.mediaIcons{
+ display:inline-block;
+}
+.mediaIcons li{
+ display:inline-block;
+}
