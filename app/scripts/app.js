@@ -20,6 +20,62 @@ angular
         templateUrl: 'views/homePage.html',
         controller: 'homePageCtrl'
       })
+      .when('/about', {
+        templateUrl: 'views/aboutPage.html',
+        controller: 'AboutpageCtrl'
+      })
+      .when('/education', {
+        templateUrl: 'views/educationPage.html',
+        controller: 'EducationpageCtrl'
+      })
+      .when('/education/shinSplints', {
+       templateUrl: 'views/injuryPages/shinSplintsPage.html',
+       controller: 'EducationpageCtrl'
+      })
+      .when('/education/runnersKnee', {
+       templateUrl: 'views/injuryPages/runnersKneePage.html',
+       controller: 'EducationpageCtrl'
+      })
+      .when('/education/neuromas', {
+       templateUrl: 'views/injuryPages/neuromasPage.html',
+       controller: 'EducationpageCtrl'
+      })
+      .when('/education/ibs', {
+       templateUrl: 'views/injuryPages/ibsPage.html',
+       controller: 'EducationpageCtrl'
+      })
+      .when('/education/hipPain', {
+       templateUrl: 'views/injuryPages/hipPainPage.html',
+       controller: 'EducationpageCtrl'
+      })
+      .when('/education/heelPain', {
+       templateUrl: 'views/injuryPages/heelPainPage.html',
+       controller: 'EducationpageCtrl'
+      })
+      .when('/education/bunions', {
+       templateUrl: 'views/injuryPages/bunionsPage.html',
+       controller: 'EducationpageCtrl'
+      })
+      .when('/education/backPain', {
+       templateUrl: 'views/injuryPages/backPainPage.html',
+       controller: 'EducationpageCtrl'
+      })
+      .when('/education/achilles', {
+       templateUrl: 'views/injuryPages/achillesPage.html',
+       controller: 'EducationpageCtrl'
+      })
+      .when('/education/injuryVideos',{
+       templateUrl: 'views/injuryVideos.html',
+       controller: 'EducationpageCtrl'
+      })
+      .when('/GFR', {
+        templateUrl: 'views/goodFormRunning.html',
+        controller: 'GoodformrunningCtrl'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contactPage.html',
+        controller: 'ContactpageCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

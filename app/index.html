@@ -29,17 +29,16 @@
      <div class="header">
       <img src="http://placehold.it/145x60" alt="Store Logo">
       <ul class="navBar">
-       <a href=""><li>Home</li></a>
-       <a href=""><li>About Us</li></a>
-       <a href=""><li>Education</li></a>
+       <a href="#/"><li>Home</li></a>
+       <a href="#/about"><li>About Us</li></a>
+       <a href="#/education"><li>Education</li></a>
        <a href=""><li>Products</li></a>
-       <a href=""><li>Good Form</li></a>
+       <a href="#/GFR"><li>Good Form</li></a>
        <a href=""><li>Community</li></a>
-       <a href=""><li>Contact</li></a>
-       <a href=""><li>Locations</li></a>
+       <a href="#/contact"><li>Contact</li></a>
       </ul>
 
-      <ul class="mediaIcons">
+      <ul class="mediaIconsHeader">
        <li><img src="http://placehold.it/45x45" alt="Facebook"></li>
        <li><img src="http://placehold.it/45x45" alt="Twitter"></li>
        <li><img src="http://placehold.it/45x45" alt="Youtube"></li>
@@ -93,7 +92,7 @@
      </div>
      <div class="col-lg-6">
       <div class="row">
-      <ul class="mediaIcons">
+      <ul class="mediaIconsFoot">
        <li><img src="http://placehold.it/45x45" alt="Facebook"></li>
        <li><img src="http://placehold.it/45x45" alt="Twitter"></li>
        <li><img src="http://placehold.it/45x45" alt="Youtube"></li>
@@ -130,13 +129,17 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/homePage.js"></script>
+        <script src="scripts/controllers/aboutpage.js"></script>
+        <script src="scripts/controllers/educationpage.js"></script>
+        <script src="scripts/controllers/goodformrunning.js"></script>
+        <script src="scripts/controllers/contactpage.js"></script>
         <!-- endbuild -->
 </body>
 </html>

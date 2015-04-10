@@ -1,18 +1,29 @@
 @import url('homePage.css');
+@import url('aboutPage.css');
+@import url('educationPage.css');
+
 .header{
  border-bottom:2px solid blue;
 }
 .navBar {
  display:inline-block;
+ text-align:center;
 }
 .navBar li{
  display:inline-block;
 }
-.mediaIcons{
+.mediaIconsHeader{
  display:inline-block;
  float:right;
 }
-.mediaIcons li{
+.mediaIconsHeader li{
+ display:inline-block;
+}
+
+.mediaIconsFoot{
+ display:inline-block;
+}
+.mediaIconsFoot li{
  display:inline-block;
 }
 .footer{
