@@ -5,15 +5,17 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   </head>
   <body ng-app="footStoreApp">
     <!--[if lt IE 7]>
@@ -22,31 +24,39 @@
 
     <!-- Add your site or application content here -->
   <div class="container-fluid">
-   <div class="row">
+   <div class="row" id="headerRow">
     <!-- HEADER STARTS HERE -->
-    <div class="col-lg-1"></div>
-    <div class="col-lg-10">
-     <div class="header">
-      <img src="http://placehold.it/145x60" alt="Store Logo">
-      <ul class="navBar">
-       <a href="#/"><li>Home</li></a>
-       <a href="#/about"><li>About Us</li></a>
-       <a href="#/education"><li>Education</li></a>
-       <a href=""><li>Products</li></a>
-       <a href="#/GFR"><li>Good Form</li></a>
-       <a href=""><li>Community</li></a>
-       <a href="#/contact"><li>Contact</li></a>
-      </ul>
+    <div class="col-lg-12 noPadding" id="headerWrapper">
 
-      <ul class="mediaIconsHeader">
-       <li><img src="http://placehold.it/45x45" alt="Facebook"></li>
-       <li><img src="http://placehold.it/45x45" alt="Twitter"></li>
-       <li><img src="http://placehold.it/45x45" alt="Youtube"></li>
-       <li><img src="http://placehold.it/45x45" alt="Instagram"></li>
+     <div id="header">
+      <div class="col-lg-2 noPadding">
+      <a href="#/"><img src="images/FSLOGO.png" alt="Store Logo" id="footStoreLogo" class="img-responsive"></a>
+      </div>
+
+     <div class="col-lg-7 noPadding" role="tabpanel">
+      <ul class="navBar nav nav-tabs" role="tablist">
+       <li role="presentation"><a href="#/" role="tab" data-toggle="tab">Home</a></li>
+       <li role="presentation"><a href="#/about" role="tab" data-toggle="tab">About Us</a></li>
+       <li role="presentation"><a href="#/education" role="tab" data-toggle="tab">Education</a></li>
+       <!-- <li><a href="">Products</a></li> -->
+       <li role="presentation"><a href="#/GFR" role="tab" data-toggle="tab">Good Form Running</a></li>
+       <!-- <li><a href="">Community</a></li> -->
+       <li role="presentation"><a href="#/contact" role="tab" data-toggle="tab">Contact</a></li>
       </ul>
      </div>
-    </div>
-    <div class="col-lg-1"></div>
+
+     <div class="col-lg-3 noPadding">
+      <ul class="mediaIconsHeader">
+       <li><a href="https://facebook.com/thefootstore" target="_blank"><img src="images/Facebook-icon.png" alt="Facebook" class="img-responsive"></li></a>
+       <li><a href="https://twitter.com/thefootstore" target="_blank"><img src="images/Twitter-icon.png" alt="Twitter" class="img-responsive"></li></a>
+       <li><a href="https://www.youtube.com/user/TheFootStore" target="_blank"><img src="images/Youtube-icon.png" alt="Youtube" class="img-responsive"></li></a>
+       <li><a href="https://instagram.com/thefootstore/" target="_blank"><img src="images/Instagram-icon.png" alt="Instagram" class="img-responsive"></li></a>
+      </ul>
+     </div>
+     </div>
+
+   </div>
+
    </div>
    <!-- HEADER ENDS HERE -->
 
@@ -55,8 +65,8 @@
 
    <div class="col-lg-1"></div>
    <!-- THIS IS WHERE THE VIEWS (PAGES) ARE LOADED -->
-   <div class="col-lg-10">
-     <div ng-view=""></div>
+   <div class="col-lg-10 contentDivWrapper">
+     <div ng-view="" class="contentDiv"></div>
    </div>
 
    <div class="col-lg-1"></div>
@@ -65,50 +75,38 @@
   <!--  END OF DONT TOUCH THIS -->
 
   <!-- FOOTER STARTS HERE -->
-   <div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-10">
-    <div class="footer">
-     <div class="col-lg-6">
-      <div class="row"><h2>Store Locations</h2></div>
-      <div class="col-lg-6">
-       <h3>The Foot Store</h3>
-       <ul>
-       <li><b>843-849-1108</b></li>
-       <li>1901 N.Highway 17 <br> Mt.Pleasant, SC 29646 <br> Tuesday - Saturday<br> 10 AM - 6 PM</li>
-       <li>footstore@footstore.com</li>
-       <li>843-849-1170(fax)</li>
-      </ul>
-      </div>
-      <div class="col-lg-6">
-       <h3>The Foot Store North</h3>
-       <ul>
-        <li><b>843-747-0602</b></li>
-        <li>3471 W. Montague Avenue <br> N. Charleston, SC 29418 <br> Tuesday - Saturday<br> 10 AM - 6 PM</li>
-        <li>footstore@footstore.com</li>
-        <li>843-747-0604(fax)</li>
-       </ul>
-      </div>
-     </div>
-     <div class="col-lg-6">
-      <div class="row">
-      <ul class="mediaIconsFoot">
-       <li><img src="http://placehold.it/45x45" alt="Facebook"></li>
-       <li><img src="http://placehold.it/45x45" alt="Twitter"></li>
-       <li><img src="http://placehold.it/45x45" alt="Youtube"></li>
-       <li><img src="http://placehold.it/45x45" alt="Instagram"></li>
-      </ul>
-     </div>
-     <div class="col-lg-12">
-      <img src="https://placehold.it/300x250" alt="">
-     </div>
-     </div>
+   <div class="row footer">
+    <div class="col-lg-3 footerLeft">
+     <h2>The Foot Store</h2>
+     <ul>
+      <li>1909 N. Highway 17
+       <br>
+       Mt. Pleasant, SC 29646</li>
+      <li><a href="tel:843-849-1108">843-849-1108</a></li>
+     </ul>
+    </div>
+    <div class="col-lg-6 noPadding footerMiddle">
+     <a href="#/"><img src="images/FSLOGO.png" alt="" id="footerLogo" class="img-responsive"></a>
+     <ul class="mediaIconsFooter">
+      <li><a href="https://facebook.com/thefootstore" target="_blank"><img src="images/Facebook-icon.png" alt="Facebook" class="img-responsive"></li></a>
+      <li><a href="https://twitter.com/thefootstore" target="_blank"><img src="images/Twitter-icon.png" alt="Twitter" class="img-responsive"></li></a>
+      <li><a href="https://www.youtube.com/user/TheFootStore" target="_blank"><img src="images/Youtube-icon.png" alt="Youtube" class="img-responsive"></li></a>
+      <li><a href="https://instagram.com/thefootstore/" target="_blank"><img src="images/Instagram-icon.png" alt="Instagram" class="img-responsive"></li></a>
+     </ul>
+    </div>
+    <div class="col-lg-3 footerRight">
+     <h2>The Foot Store North</h2>
+     <ul>
+      <li>3471 W. Montague Ave
+       <br>
+       North Charleston, SC 29418</li>
+      <li><a href="tel:843-747-0602">843-747-0602</a></li>
+     </ul>
     </div>
    </div>
-    <div class="col-lg-1"></div>
-   </div>
+   <!-- FOOTER ENDS HERE -->
   </div>
-  <!-- FOOTER ENDS HERE -->
+
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -129,7 +127,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

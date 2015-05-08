@@ -1,0 +1,43 @@
+.injuryPages {
+  color: #134080; }
+
+.injuryButton {
+  display: block;
+  margin-bottom: 2px;
+  background-color: #134080; }
+
+.injuryNav {
+  margin-top: 25px;
+  position: fixed;
+  border-right: 2px solid #337ab7;
+  padding-right: 10px;
+  margin-right: 15px; }
+
+.injuryImage1 {
+  padding-top: 25px; }
+
+.widthFix {
+  width: 338px; }
+
+.shinSplintImage2 {
+  margin-top: 10px; }
+
+.stretchImages {
+  display: inline-block;
+  border: 2px solid #134080;
+  margin-top: 10px; }
+
+.injuryRow1 {
+  border-bottom: 3px solid #134080;
+  padding-bottom: 10px;
+  padding-top: 10px; }
+
+.injuryRow2 {
+  border-bottom: 3px solid #134080;
+  padding-bottom: 10px;
+  padding-top: 10px; }
+
+.injuryRow3 {
+  border-bottom: 3px solid #134080;
+  padding-bottom: 10px;
+  padding-top: 10px; }

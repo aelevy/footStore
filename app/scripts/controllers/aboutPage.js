@@ -10,12 +10,18 @@
 angular.module('footStoreApp')
   .controller('AboutpageCtrl', function ($scope) {
     var staff = [
-   {"image":"https://placehold.it/200x200"},
-  {"image":"https://placehold.it/200x200"},
- {"image":"https://placehold.it/200x200"},
-{"image":"https://placehold.it/200x200"},
-{"image":"https://placehold.it/200x200"},
-{"image":"https://placehold.it/200x200"}
+   {"name":"Carolyn",
+    "image":"images/carolyn.jpg"},
+  {"name":"Tricia",
+   "image":"images/tricia.jpg"},
+ {"name":"Natalie",
+  "image":"images/natalie.jpg"},
+{"name":"Andrew",
+ "image":"images/andrew.jpg"},
+{"name":"Brent",
+ "image":"images/brent.jpg"},
+{"name":"Wendy",
+ "image":"images/wendy.jpg"}
     ]
 
     $scope.staff = staff;

@@ -1,3 +1,17 @@
+.aboutHeader {
+  color: #134080;
+  text-align: center; }
+
+.storeDescription {
+  color: #134080; }
+
+.carolynRow {
+  color: #134080; }
+  .carolynRow img {
+    height: 250px;
+    width: 250px;
+    float: right; }
+
 .staffHeader {
   text-align: center; }
 
@@ -6,3 +20,6 @@
 
 .staffCards {
   margin-top: 10px; }
+  .staffCards img {
+    height: 300px;
+    width: 250px; }
