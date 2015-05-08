@@ -1,0 +1,144 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="footStoreApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+  <div class="container-fluid">
+   <div class="row">
+    <!-- HEADER STARTS HERE -->
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+     <div class="header">
+      <img src="http://placehold.it/145x60" alt="Store Logo">
+      <ul class="navBar">
+       <a href="#/"><li>Home</li></a>
+       <a href="#/about"><li>About Us</li></a>
+       <a href="#/education"><li>Education</li></a>
+       <a href=""><li>Products</li></a>
+       <a href="#/GFR"><li>Good Form</li></a>
+       <a href=""><li>Community</li></a>
+       <a href="#/contact"><li>Contact</li></a>
+      </ul>
+
+      <ul class="mediaIconsHeader">
+       <li><img src="http://placehold.it/45x45" alt="Facebook"></li>
+       <li><img src="http://placehold.it/45x45" alt="Twitter"></li>
+       <li><img src="http://placehold.it/45x45" alt="Youtube"></li>
+       <li><img src="http://placehold.it/45x45" alt="Instagram"></li>
+      </ul>
+     </div>
+    </div>
+    <div class="col-lg-1"></div>
+   </div>
+   <!-- HEADER ENDS HERE -->
+
+   <!-- START OF DONT TOUCH THIS -->
+   <div class="row">
+
+   <div class="col-lg-1"></div>
+   <!-- THIS IS WHERE THE VIEWS (PAGES) ARE LOADED -->
+   <div class="col-lg-10">
+     <div ng-view=""></div>
+   </div>
+
+   <div class="col-lg-1"></div>
+
+  </div>
+  <!--  END OF DONT TOUCH THIS -->
+
+  <!-- FOOTER STARTS HERE -->
+   <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+    <div class="footer">
+     <div class="col-lg-6">
+      <div class="row"><h2>Store Locations</h2></div>
+      <div class="col-lg-6">
+       <h3>The Foot Store</h3>
+       <ul>
+       <li><b>843-849-1108</b></li>
+       <li>1901 N.Highway 17 <br> Mt.Pleasant, SC 29646 <br> Tuesday - Saturday<br> 10 AM - 6 PM</li>
+       <li>footstore@footstore.com</li>
+       <li>843-849-1170(fax)</li>
+      </ul>
+      </div>
+      <div class="col-lg-6">
+       <h3>The Foot Store North</h3>
+       <ul>
+        <li><b>843-747-0602</b></li>
+        <li>3471 W. Montague Avenue <br> N. Charleston, SC 29418 <br> Tuesday - Saturday<br> 10 AM - 6 PM</li>
+        <li>footstore@footstore.com</li>
+        <li>843-747-0604(fax)</li>
+       </ul>
+      </div>
+     </div>
+     <div class="col-lg-6">
+      <div class="row">
+      <ul class="mediaIconsFoot">
+       <li><img src="http://placehold.it/45x45" alt="Facebook"></li>
+       <li><img src="http://placehold.it/45x45" alt="Twitter"></li>
+       <li><img src="http://placehold.it/45x45" alt="Youtube"></li>
+       <li><img src="http://placehold.it/45x45" alt="Instagram"></li>
+      </ul>
+     </div>
+     <div class="col-lg-12">
+      <img src="https://placehold.it/300x250" alt="">
+     </div>
+     </div>
+    </div>
+   </div>
+    <div class="col-lg-1"></div>
+   </div>
+  </div>
+  <!-- FOOTER ENDS HERE -->
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/homePage.js"></script>
+        <script src="scripts/controllers/aboutpage.js"></script>
+        <script src="scripts/controllers/educationpage.js"></script>
+        <script src="scripts/controllers/goodformrunning.js"></script>
+        <script src="scripts/controllers/contactpage.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
