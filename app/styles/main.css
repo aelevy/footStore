@@ -36,7 +36,7 @@ body{
  height:100px;
  width:250px;
  padding-top:10px;
- margin-left:80px;
+ margin-left:70px;
 }
 .navBar {
  display:inline-block;
@@ -44,7 +44,7 @@ body{
  padding:0;
  margin-top:25px;
  font-size:40px;
- margin-left:95px;
+ margin-left:85px;
 }
 .nav-tabs{
  border-bottom:none;
@@ -57,7 +57,7 @@ body{
 }
 .navBar li{
  display:inline-block;
- margin-left:25px;
+ margin-left:15px;
 }
 .navBar li a:hover{
  background-color:white;
