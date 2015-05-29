@@ -10,18 +10,16 @@
 angular.module('footStoreApp')
   .controller('AboutpageCtrl', function ($scope) {
     var staff = [
-   {"name":"Carolyn",
-    "image":"images/carolyn.jpg"},
   {"name":"Tricia",
-   "image":"images/tricia.jpg"},
+   "image":"images/trish.png"},
  {"name":"Natalie",
-  "image":"images/natalie.jpg"},
+  "image":"images/Natalie.png"},
 {"name":"Andrew",
  "image":"images/andrew.png"},
 {"name":"Brent",
- "image":"images/brent.jpg"},
+ "image":"images/brent.png"},
 {"name":"Wendy",
- "image":"images/wendy.jpg"}
+ "image":"images/wendy.png"}
     ]
 
     $scope.staff = staff;
