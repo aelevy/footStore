@@ -13,9 +13,18 @@ angular
     'ngRoute',
     'ngSanitize',
     'ui.bootstrap',
+    'uiGmapgoogle-maps'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, uiGmapGoogleMapApiProvider) {
+   uiGmapGoogleMapApiProvider.configure({
+    //    key: 'your api key',
+    v: '3.17',
+    libraries: 'weather,geometry,visualization'
+   });
     $routeProvider
+      .when('/404', {
+        templateUrl: '404.html'
+      })
       .when('/', {
         templateUrl: 'views/homePage.html',
         controller: 'homePageCtrl'
@@ -77,6 +86,6 @@ angular
         controller: 'ContactpageCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/404'
       });
   });

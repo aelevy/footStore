@@ -2,6 +2,8 @@
 @import url('aboutPage.css');
 @import url('educationPage.css');
 @import url('injuryPages.css');
+@import url('contactPage.css');
+@import url('goodForm.css');
 
 body{
  background:white;
@@ -31,19 +33,21 @@ body{
 }
 #footStoreLogo{
  display:inline-block;
- height:80px;
- width:200px;
- margin-top:20px;
- margin-left:120px;
+ height:100px;
+ width:250px;
+ padding-top:10px;
+ margin-left:80px;
 }
 .navBar {
  display:inline-block;
  text-align:center;
  padding:0;
- margin-top:20px;
+ margin-top:25px;
  font-size:40px;
- margin-left:100px
-
+ margin-left:95px;
+}
+.nav-tabs{
+ border-bottom:none;
 }
 .navBar a{
  font-size:18px;
@@ -74,45 +78,52 @@ body{
  height:50px;
 }
 .mediaIconsHeader img:hover{
- box-shadow:1px 1px 2px white;
+ height:55px;
 }
 
 .footer{
  text-align:center;
  margin-top:15px;
- /* border-top:2px solid #134080; */
  color:#134080;
 }
 .footerLeft{
- padding-top:30px;
- margin-right:-120px;
+ /* padding-top:30px;
+ margin-right:-120px; */
 }
 .footerLeft ul{
  padding:0px;
 }
 .footerLeft li{
  list-style-type:none;
- font-size:20px;
+ font-size:18px;
+}
+.footerLeft h2{
+ font-size:28px;
 }
 .footerMiddle{
- padding-left:100px;
+ /* padding-left:100px; */
 }
 .footerRight{
- padding-top:30px;
- margin-left:-40px;
+ /* padding-top:30px;
+ margin-left:-40px; */
 }
 .footerRight ul{
  padding:0px;
 }
 .footerRight li{
  list-style-type:none;
- font-size:20px
+ font-size:18px
+}
+.footerRight h2{
+ font-size:28px;
 }
 .mediaIconsFooter{
- margin-top:-100px;
  padding:0px;
 }
-
+.phoneIcon{
+ height:30px;
+ padding-right:5px;
+}
 .mediaIconsFooter li{
  display:inline-block;
 }
@@ -121,6 +132,6 @@ body{
 }
 #footerLogo{
  display:inline-block;
- width:500px;
- height:450px;
+ width:300px;
+ height:200px;
 }

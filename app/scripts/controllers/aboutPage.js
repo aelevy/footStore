@@ -17,7 +17,7 @@ angular.module('footStoreApp')
  {"name":"Natalie",
   "image":"images/natalie.jpg"},
 {"name":"Andrew",
- "image":"images/andrew.jpg"},
+ "image":"images/andrew.png"},
 {"name":"Brent",
  "image":"images/brent.jpg"},
 {"name":"Wendy",

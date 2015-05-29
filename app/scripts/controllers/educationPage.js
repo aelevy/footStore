@@ -11,40 +11,49 @@ angular.module('footStoreApp')
   .controller('EducationpageCtrl', function ($scope) {
    var injuries = [
   {
-   "image":"https://placehold.it/200x200",
-   "pageLink":"#/education/shinSplints"
+   "image":"images/shinSplints/shinSplints.jpg",
+   "pageLink":"#/education/shinSplints",
+   "injuryTitle":"Shin Splints"
   },
  {
-  "image":"https://placehold.it/200x200",
-  "pageLink":"#/education/runnersKnee"
+  "image":"images/runnersKnee/runnersKnee.jpg",
+  "pageLink":"#/education/runnersKnee",
+  "injuryTitle":"Runners Knee"
   },
 {
- "image":"https://placehold.it/200x200",
- "pageLink":"#/education/neuromas"
+ "image":"images/neuromas/neuroma1.jpg",
+ "pageLink":"#/education/neuromas",
+ "injuryTitle":"Neuromas"
  },
 {
- "image":"https://placehold.it/200x200",
- "pageLink":"#/education/ibs"
+ "image":"images/ibs/ibs1.jpg",
+ "pageLink":"#/education/ibs",
+ "injuryTitle":"Iliotibial Band"
  },
 {
- "image":"https://placehold.it/200x200",
- "pageLink":"#/education/hipPain"
+ "image":"images/hipPain/hippain1.jpg",
+ "pageLink":"#/education/hipPain",
+ "injuryTitle":"Hip Pain"
  },
 {
- "image":"https://placehold.it/200x200",
- "pageLink":"#/education/heelPain"
+ "image":"images/heelpainPF/heelpainPF1.jpg",
+ "pageLink":"#/education/heelPain",
+ "injuryTitle":"Plantar Fasciatis"
  },
 {
- "image":"https://placehold.it/200x200",
- "pageLink":"#/education/bunions"
+ "image":"images/bunions/bunions1.jpg",
+ "pageLink":"#/education/bunions",
+ "injuryTitle":"Bunions"
  },
 {
- "image":"https://placehold.it/200x200",
- "pageLink":"#/education/backPain"
+ "image":"images/backpain/backpain1.jpg",
+ "pageLink":"#/education/backPain",
+ "injuryTitle":"Back Pain"
  },
 {
- "image":"https://placehold.it/200x200",
- "pageLink":"#/education/achilles"
+ "image":"images/achilles/achilles1.jpg",
+ "pageLink":"#/education/achilles",
+ "injuryTitle":"Achilles Tendon"
  }
 ];
 

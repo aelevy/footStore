@@ -1,8 +1,29 @@
 .injuryHeader {
-  text-align: center; }
+  text-align: center;
+  color: #134080; }
 
 .injuryBlock {
   text-align: center; }
 
 .injuryCards {
-  margin-top: 10px; }
+  margin-top: 10px;
+  padding: 20px; }
+  .injuryCards img {
+    height: 100%;
+    width: 100%; }
+  .injuryCards img:hover {
+    opacity: .7; }
+  .injuryCards .imageWrapper {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: #134080;
+    border-radius: 7px; }
+  .injuryCards .articleTitle {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #134080;
+    border-radius: 3%; }
+    .injuryCards .articleTitle h2 {
+      color: white; }

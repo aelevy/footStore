@@ -4,7 +4,10 @@
 <div class="col-lg-12 injuryBlock">
  <div ng-repeat="injury in injuries">
   <div class="col-lg-4 injuryCards">
-   <a href="{{injury.pageLink}}"><img src="{{injury.image}}" alt=""></a>
+   <div class="imageWrapper">
+   <a href="{{injury.pageLink}}"><img src="{{injury.image}}" alt="" class="img-responsive img-rounded"></a>
+   <div class="articleTitle"><h2>{{injury.injuryTitle}}</h2></div>
+  </div>
   </div>
  </div>
 </div>

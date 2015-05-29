@@ -9,9 +9,12 @@
  */
 angular.module('footStoreApp')
   .controller('GoodformrunningCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+    var goodFormClasses = [
+   {"level":"GFR Level 1",
+    "date":"June 13th, 2015",
+    "price": "Free"
+   }
     ];
+
+    $scope.goodFormClasses = goodFormClasses;
   });

@@ -30,7 +30,7 @@
 
      <div id="header">
       <div class="col-lg-2 noPadding">
-      <a href="#/"><img src="images/FSLOGO.png" alt="Store Logo" id="footStoreLogo" class="img-responsive"></a>
+      <a href="#/"><img src="images/FSLOGOALLWHITE.png" alt="Store Logo" id="footStoreLogo" class="img-responsive"></a>
       </div>
 
      <div class="col-lg-7 noPadding" role="tabpanel">
@@ -47,10 +47,10 @@
 
      <div class="col-lg-3 noPadding">
       <ul class="mediaIconsHeader">
-       <li><a href="https://facebook.com/thefootstore" target="_blank"><img src="images/Facebook-icon.png" alt="Facebook" class="img-responsive"></li></a>
-       <li><a href="https://twitter.com/thefootstore" target="_blank"><img src="images/Twitter-icon.png" alt="Twitter" class="img-responsive"></li></a>
-       <li><a href="https://www.youtube.com/user/TheFootStore" target="_blank"><img src="images/Youtube-icon.png" alt="Youtube" class="img-responsive"></li></a>
-       <li><a href="https://instagram.com/thefootstore/" target="_blank"><img src="images/Instagram-icon.png" alt="Instagram" class="img-responsive"></li></a>
+       <li><a href="https://facebook.com/thefootstore" target="_blank"><img src="images/Facebook-icon.png" alt="Facebook" class="img-responsive"></a></li>
+       <li><a href="https://twitter.com/thefootstore" target="_blank"><img src="images/Twitter-icon.png" alt="Twitter" class="img-responsive"></a></li>
+       <li><a href="https://www.youtube.com/user/TheFootStore" target="_blank"><img src="images/Youtube-icon.png" alt="Youtube" class="img-responsive"></a></li>
+       <li><a href="https://instagram.com/thefootstore/" target="_blank"><img src="images/Instagram-icon.png" alt="Instagram" class="img-responsive"></a></li>
       </ul>
      </div>
      </div>
@@ -76,36 +76,42 @@
 
   <!-- FOOTER STARTS HERE -->
    <div class="row footer">
-    <div class="col-lg-3 footerLeft">
-     <h2>The Foot Store</h2>
-     <ul>
-      <li>1909 N. Highway 17
-       <br>
-       Mt. Pleasant, SC 29646</li>
-      <li><a href="tel:843-849-1108">843-849-1108</a></li>
-     </ul>
-    </div>
-    <div class="col-lg-6 noPadding footerMiddle">
-     <a href="#/"><img src="images/FSLOGO.png" alt="" id="footerLogo" class="img-responsive"></a>
-     <ul class="mediaIconsFooter">
-      <li><a href="https://facebook.com/thefootstore" target="_blank"><img src="images/Facebook-icon.png" alt="Facebook" class="img-responsive"></li></a>
-      <li><a href="https://twitter.com/thefootstore" target="_blank"><img src="images/Twitter-icon.png" alt="Twitter" class="img-responsive"></li></a>
-      <li><a href="https://www.youtube.com/user/TheFootStore" target="_blank"><img src="images/Youtube-icon.png" alt="Youtube" class="img-responsive"></li></a>
-      <li><a href="https://instagram.com/thefootstore/" target="_blank"><img src="images/Instagram-icon.png" alt="Instagram" class="img-responsive"></li></a>
-     </ul>
-    </div>
-    <div class="col-lg-3 footerRight">
-     <h2>The Foot Store North</h2>
-     <ul>
-      <li>3471 W. Montague Ave
-       <br>
-       North Charleston, SC 29418</li>
-      <li><a href="tel:843-747-0602">843-747-0602</a></li>
-     </ul>
+    <div class="col-lg-2"></div>
+
+    <div class="col-lg-8 noPadding">
+     <div class="col-lg-3 footerLeft">
+      <h2>The Foot Store</h2>
+      <ul>
+       <li>1909 N. Highway 17
+        <br>
+        Mt. Pleasant, SC 29646</li>
+        <li><img src="images/telephone39.png" alt="" class="phoneIcon"><a href="tel:843-849-1108">843-849-1108</a></li>
+       </ul>
+       </div>
+     <div class="col-lg-6">
+      <a href="#/"><img src="images/FSLOGOREGULAR.png" alt="" id="footerLogo" class="img-responsive"></a>
+      <ul class="mediaIconsFooter">
+       <li><a href="https://facebook.com/thefootstore" target="_blank"><img src="images/Facebook-icon.png" alt="Facebook" class="img-responsive"></a></li>
+       <li><a href="https://twitter.com/thefootstore" target="_blank"><img src="images/Twitter-icon.png" alt="Twitter" class="img-responsive"></a></li>
+       <li><a href="https://www.youtube.com/user/TheFootStore" target="_blank"><img src="images/Youtube-icon.png" alt="Youtube" class="img-responsive"></a></li>
+       <li><a href="https://instagram.com/thefootstore/" target="_blank"><img src="images/Instagram-icon.png" alt="Instagram" class="img-responsive"></a></li>
+      </ul>
+      </div>
+     <div class="col-lg-3 footerRight">
+      <h2>Foot Store North</h2>
+      <ul>
+       <li>3471 W. Montague Ave
+        <br>
+        North Charleston, SC 29418</li>
+        <li><img src="images/telephone39.png" alt="" class="phoneIcon"><a href="tel:843-747-0602">843-747-0602</a></li>
+       </ul>
+       </div>
     </div>
    </div>
+    <div class="col-lg-2"></div>
+   </div>
    <!-- FOOTER ENDS HERE -->
-  </div>
+
 
 
 
@@ -120,6 +126,7 @@
        ga('send', 'pageview');
     </script>
 
+
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -127,6 +134,8 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
     <!-- endbuild -->

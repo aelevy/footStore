@@ -11,7 +11,7 @@ angular.module('footStoreApp')
   .controller('homePageCtrl', function ($scope) {
    $scope.myInterval = 5000;
    var slides = $scope.slides = [
-  {"image":"images/mainSlider/shirtfocus.jpg"},
+  {"image":"images/mainSlider/shirtfocus.png"},
  {"image":"images/mainSlider/staff.jpg"},
    ];
 
