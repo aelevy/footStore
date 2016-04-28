@@ -9,10 +9,11 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css' />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css' />
+    <link rel='stylesheet' href='../bower_components/bootstrap/dist/css/bootstrap.css' />
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -26,14 +27,14 @@
   <div class="container-fluid">
    <div class="row" id="headerRow">
     <!-- HEADER STARTS HERE -->
-    <div class="col-lg-12 noPadding" id="headerWrapper">
+    <div class="col-lg-12 col-md-12 noPadding" id="headerWrapper">
 
      <div id="header">
-      <div class="col-lg-2 noPadding">
+      <div class="col-lg-2 col-md-2  noPadding center">
       <a href="#/"><img src="images/FSLOGOALLWHITE.png" alt="Store Logo" id="footStoreLogo" class="img-responsive"></a>
       </div>
 
-     <div class="col-lg-7 noPadding" role="tabpanel">
+     <div class="col-lg-7 col-md-7 noPadding center" role="tabpanel">
       <ul class="navBar nav nav-tabs" role="tablist">
        <li role="presentation"><a href="#/" role="tab" data-toggle="tab">Home</a></li>
        <li role="presentation"><a href="#/about" role="tab" data-toggle="tab">About Us</a></li>
@@ -45,7 +46,7 @@
       </ul>
      </div>
 
-     <div class="col-lg-3 noPadding">
+     <div class="col-lg-3 col-md-3 noPadding center">
       <ul class="mediaIconsHeader">
        <li><a href="https://facebook.com/thefootstore" target="_blank"><img src="images/Facebook-icon.png" alt="Facebook" class="img-responsive"></a></li>
        <li><a href="https://twitter.com/thefootstore" target="_blank"><img src="images/Twitter-icon.png" alt="Twitter" class="img-responsive"></a></li>
@@ -63,32 +64,32 @@
    <!-- START OF DONT TOUCH THIS -->
    <div class="row">
 
-   <div class="col-lg-1"></div>
+   <div class="col-lg-1 col-md-1"></div>
    <!-- THIS IS WHERE THE VIEWS (PAGES) ARE LOADED -->
-   <div class="col-lg-10 contentDivWrapper">
+   <div class="col-lg-10 col-md-10 contentDivWrapper">
      <div ng-view="" class="contentDiv"></div>
    </div>
 
-   <div class="col-lg-1"></div>
+   <div class="col-lg-1 col-md-1"></div>
 
   </div>
   <!--  END OF DONT TOUCH THIS -->
 
   <!-- FOOTER STARTS HERE -->
    <div class="row footer">
-    <div class="col-lg-2"></div>
+    <!-- <div class="col-lg-2 col-md-2"></div> -->
 
-    <div class="col-lg-8 noPadding">
-     <div class="col-lg-3 footerLeft">
-      <h2>The Foot Store</h2>
+    <div class="col-lg-12 col-md-12 col-sm-12 noPadding">
+     <div class="col-lg-3 col-md-3 col-sm-3 footerLeft">
+      <h2>Foot Store</h2>
       <ul>
        <li>1909 N. Highway 17
         <br>
-        Mt. Pleasant, SC 29646</li>
-        <li><img src="images/telephone39.png" alt="" class="phoneIcon"><a href="tel:843-849-1108">843-849-1108</a></li>
+        Mt. Pleasant, SC 29464</li>
+        <li><a href="tel:843-849-1108">843-849-1108</a></li>
        </ul>
        </div>
-     <div class="col-lg-6">
+     <div class="col-lg-6 col-md-6 col-sm-6">
       <a href="#/"><img src="images/FSLOGOREGULAR.png" alt="" id="footerLogo" class="img-responsive"></a>
       <ul class="mediaIconsFooter">
        <li><a href="https://facebook.com/thefootstore" target="_blank"><img src="images/Facebook-icon.png" alt="Facebook" class="img-responsive"></a></li>
@@ -97,18 +98,18 @@
        <li><a href="https://instagram.com/thefootstore/" target="_blank"><img src="images/Instagram-icon.png" alt="Instagram" class="img-responsive"></a></li>
       </ul>
       </div>
-     <div class="col-lg-3 footerRight">
+     <div class="col-lg-3 col-md-3 col-sm-3 footerRight">
       <h2>Foot Store North</h2>
       <ul>
        <li>3471 W. Montague Ave
         <br>
         North Charleston, SC 29418</li>
-        <li><img src="images/telephone39.png" alt="" class="phoneIcon"><a href="tel:843-747-0602">843-747-0602</a></li>
+        <li><a href="tel:843-747-0602">843-747-0602</a></li>
        </ul>
        </div>
     </div>
    </div>
-    <div class="col-lg-2"></div>
+    <!-- <div class="col-lg-2 col-md-2"></div> -->
    </div>
    <!-- FOOTER ENDS HERE -->
 

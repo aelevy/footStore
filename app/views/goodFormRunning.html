@@ -1,25 +1,46 @@
 <div class="row">
- <div class="col-lg-6">
+ <div class="col-lg-6 col-md-6">
   <div class="goodFormClassWrap">
    <div class="row goodFormRow1">
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-md-6">
    <h2>Upcoming Classes</h2>
   </div>
-  <div class="col-lg-6">
+  <div class="col-lg-6 col-md-6">
    <p>Good Form Running / Walking Level 1 Classes
-    are SATURDAY from 8 - 9:30am.</p>
+    are SATURDAY from 9 - 9:30am.</p>
    </div>
    </div>
-   <div class="row goodFormRow2 noPadding" ng-repeat="class in goodFormClasses">
-   <div class="col-lg-4"><h3>{{class.level}}</h3></div>
-   <div class="col-lg-6"><h3>{{class.date}}</h3></div>
-   <div class="col-lg-2 priceCol"><h3>{{class.price}}</h3></div>
+   <div class="fsGFR">
+    <h3>Foot Store</h3>
+    <h4>Location - Mount Pleasant</h4>
+    <h4>Call us at <a href="tel:843-849-1108">843-849-1108</a></h4>
+    <div class="row goodFormRow2 noPadding" ng-repeat="class in goodFormClasses |
+    filter:{ location:'Mount Pleasant' }">
+     <div class="col-lg-4 col-md-4"><h3>{{class.level}}</h3></div>
+     <div class="col-lg-5 col-md-5"><h3>{{class.date}}</h3></div>
+     <div class="col-lg-3 col-md-3 priceCol"><h3>{{class.price}}</h3></div>
+    </div>
    </div>
+   <div class="fsnGFR">
+    <h3>Foot Store North</h3>
+    <h4>Location - North Charleston</h4>
+    <h4>Call us at <a href="tel:843-747-0602">843-747-0602</a></h4>
+    <div class="row goodFormRow2 noPadding" ng-repeat="class in goodFormClasses |
+    filter:{ location:'North Charleston' }">
+    <div class="col-lg-4 col-md-4"><h3>{{class.level}}</h3></div>
+    <div class="col-lg-5 col-md-5"><h3>{{class.date}}</h3></div>
+    <div class="col-lg-3 col-md-3 priceCol"><h3>{{class.price}}</h3></div>
+   </div>
+   </div>
+
   </div>
-  <a href="http://www.goodformrunning.com/" target="_blank"><img src="images/goodForm.jpg" alt="" class="img-responsive"></a>
+  <a href="http://www.goodformrunning.com/" target="_blank"><img src="images/goodForm.jpg" alt="" class="img-responsive gfrIMG"></a>
  </div>
- <div class="col-lg-6">
-  <iframe src="https://player.vimeo.com/video/22484131" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="embed-responsive-item"></iframe>
+ <div class="col-lg-6 col-md-6 ">
+  <div class="videoCenter">
+   <iframe src="https://player.vimeo.com/video/22484131" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="embed-responsive-item"></iframe>
+  </div>
+
   <p class="goodFormText">Runners strive to run faster, more efficiently, and injury free. Good form running focuses on proper mechanics and aims to help runners of all ages and abilities achieve those goals. GFR is designed with simplicity as the primary goal, since if something isn’t easy it generally doesn’t last. Making incremental changes can have a monumental effect on the enjoyability of your exercising. Not a runner? We emphasize how basic principles apply to both running and walking, even for only walking around the mall or to and from your car. GFR addresses posture, lean, and foot strike. We use video to analyze the gait of participants and encourage questions and discussion. Previous topics have included: running on hills, how to use gravity to help you, being barefoot, walking efficiently, footwear, and staying injury free. We have consistently received positive feedback from our clinics and are confident that Good Form Running can have a positive effect on your exercising too.</p>
  </div>
 </div>

@@ -3,8 +3,33 @@
   #carouselWrapper .carousel-control {
     display: none; }
   #carouselWrapper .carousel-indicators {
-    display: none; }
+    bottom: 5px; }
 
 .mainSection {
   text-align: center;
   margin-top: 20px; }
+  .mainSection .callToAction {
+    position: relative;
+    height: 230px;
+    width: 350px; }
+    .mainSection .callToAction img {
+      height: 230px;
+      width: 350px; }
+    .mainSection .callToAction .ctaText {
+      position: absolute;
+      width: 100%;
+      border-radius: 3%;
+      bottom: 0px;
+      background-color: #134080;
+      color: white; }
+      .mainSection .callToAction .ctaText h2 {
+        margin-top: 10px; }
+    .mainSection .callToAction .ctaOpaque {
+      opacity: .8; }
+
+@media screen and (max-width: 777px) {
+  .callToAction {
+    margin-bottom: 10px; } }
+@media screen and (max-width: 768px) {
+  #carouselWrapper {
+    display: none; } }

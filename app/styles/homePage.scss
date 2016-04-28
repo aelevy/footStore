@@ -4,11 +4,46 @@ padding-top:15px;
  display:none;
 }
 .carousel-indicators{
- display:none;
+ bottom:5px;
 }
 
 }
 .mainSection{
  text-align:center;
  margin-top:20px;
+ .callToAction{
+  position:relative;
+  height:230px;
+  width:350px;
+  img{
+   height:230px;
+   width:350px;
+  }
+  .ctaText{
+   position:absolute;
+   width:100%;
+   border-radius:3%;
+   bottom:0px;
+   background-color:#134080;
+   color:white;
+   h2{
+    margin-top:10px;
+   }
+  }
+  .ctaOpaque{
+   opacity:.8;
+  }
+ }
+}
+
+@media screen and (max-width:777px) {
+ .callToAction{
+  margin-bottom:10px;
+ }
+}
+@media screen and (max-width:768px) {
+ #carouselWrapper{
+  display:none;
+ }
+
 }

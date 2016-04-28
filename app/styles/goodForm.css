@@ -6,8 +6,7 @@
 
 .goodFormClassWrap {
   border: 2px solid #134080;
-  margin-top: 10px;
-  border-radius: 3%;
+  border-radius: 1%;
   text-align: center;
   margin-bottom: 10px; }
   .goodFormClassWrap .goodFormRow1 {
@@ -16,8 +15,31 @@
     margin: 0px; }
     .goodFormClassWrap .goodFormRow1 h2 {
       font-size: 29px; }
+  .goodFormClassWrap .fsnGFR {
+    text-align: center; }
+    .goodFormClassWrap .fsnGFR > h3 {
+      background: #134080;
+      margin-top: 15px;
+      color: white; }
+  .goodFormClassWrap .fsGFR {
+    text-align: center; }
+    .goodFormClassWrap .fsGFR > h3 {
+      background: #134080;
+      margin-top: 15px;
+      color: white; }
   .goodFormClassWrap .goodFormRow2 {
     color: #134080; }
     .goodFormClassWrap .goodFormRow2 .priceCol {
       padding-right: 20px;
       padding-left: 0px; }
+
+.gfrIMG {
+  width: 50%;
+  margin-left: 18%; }
+
+@media screen and (max-width: 992px) {
+  .gfrIMG {
+    display: none; }
+
+  .videoCenter {
+    text-align: center; } }

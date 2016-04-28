@@ -32,39 +32,52 @@
    </li>
   </ol>
  </div> -->
- <div class="col-lg-12">
-   <div class="col-lg-6">
+ <div class="col-lg-12 col-md-12">
+   <div class="col-lg-6 col-md-6">
     <h2 class="FSBlue">The Foot Store</h2>
-    <div>
-     <ui-gmap-google-map center='map.center' zoom='map.zoom'><ui-gmap-marker idkey='marker.id' coords='marker.coords'>
-     </ui-gmap-marker></ui-gmap-google-map>
-    </div>
     <ul>
-     <li>1901 N.Highway 17 <br> Mt.Pleasant, SC 29646 <br> Tuesday - Saturday<br> 10 AM - 6 PM</li>
+     <li>1901 N.Highway 17 <br> Mt.Pleasant, SC 29464 <br> Tuesday - Saturday<br> 10 AM - 6 PM</li>
      <li>footstore@footstore.com</li>
      <li><b>843-849-1108</b></li>
      <li>843-849-1170(fax)</li>
     </ul>
+    <div>
+     <ui-gmap-google-map center='map.center' zoom='map.zoom'><ui-gmap-marker idkey='marker.id' coords='marker.coords'>
+     </ui-gmap-marker></ui-gmap-google-map>
+    </div>
+
    </div>
-   <div class="col-lg-6">
+   <div class="col-lg-6 col-md-6">
+
     <h2 class="FSBlue">The Foot Store North</h2>
-    <ui-gmap-google-map center='map2.center' zoom='map2.zoom'><ui-gmap-marker idkey="marker2.id" coords="marker2.coords">
-    </ui-gmap-marker></ui-gmap-google-map>
     <ul>
      <li>3471 W. Montague Avenue <br> N. Charleston, SC 29418 <br> Tuesday - Saturday<br> 10 AM - 6 PM</li>
      <li>footstore@footstore.com</li>
      <li><b>843-747-0602</b></li>
      <li>843-747-0604(fax)</li>
     </ul>
+    <ui-gmap-google-map center='map2.center' zoom='map2.zoom'><ui-gmap-marker idkey="marker2.id" coords="marker2.coords">
+    </ui-gmap-marker></ui-gmap-google-map>
+
    </div>
    <div class="row">
-    <div class="form-group">
-     <label for="emailInput">Email address</label>
-     <input type="email" class="form-control" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-     <label for="nameInput">Full Name</label>
-     <input type="text" class="form-control" placeholder="Enter name">
+    <div class="col-lg-2 col-md-2"></div>
+    <div class="col-lg-8 col-md-8">
+     <form action="MAILTO:footstoresc@gmail.com" role="form" method="post">
+      <div class="form-group">
+       <label for="emailInput">Email address</label>
+       <input type="email" class="form-control" placeholder="Enter email" name="email">
+       <label for="nameInput">Full Name</label>
+       <input type="text" class="form-control" placeholder="Enter name" name="name">
+       <label for="phoneInput">Phone Number</label>
+       <input type="text" class="form-control" placeholder="Enter phone number" name="phone">
+       <label for="messageInput">Enter Message</label>
+       <textarea type="text" class="form-control" placeholder="Enter message" name="message">
+       </textarea></div>
+       <button type="submit" class="btn btn-default">Submit</button>
+     </form>
+
+     <div class="col-lg-2 col-md-2"></div>
     </div>
    </div>
 </div>

@@ -3,25 +3,43 @@
 </div>
 <div class="row storeDescription">
  <h2>Who We Are</h2>
- <h4>We are more than a traditional retail shoe store.</h4>
+ <h3>We are more than a traditional retail shoe store.</h3>
 
- <p>Here at The Foot Store, we have a new approach to footcare.  With over 30 years combined experience in physical therapy, athletic training, pedorthics and retail, our staff offers their expertise while providing the best service to each customer.</p>
-
- <p>While you're here, relax while watching nature videos and enjoy the serene atmosphere. Try your shoes out on the treadmill. At The Foot Store, expert personal assistance for each and every customer is our priority.</p>
+ <p>We combine running speciality with casual shoes and sandals to fit each person
+ </p>
+ <p>Whether you want a running shoe---work shoe---outdoor active shoe---or just a shoe or sandal for every day, we can fit you with a great feeling shoe.</p>
+ <p>Combining over 15 years in shoe retail (specifically run specialty) and over 35 years of medicine – physical therapy, athletic training and pedorthics—Carolyn and Staff offer their expertise in providing exceptional customer service and knowledge of the foot and shoes.</p>
+ <p>Our success comes from our knowledge of lower extremity mechanics and injuries and how our foundation (the feet) and the shoes we wear affect us in sport and every day activity.  Knowledge of shoes and what all the different companies and shoes can do.</p>
+ <p>We were the 1st in Charleston, if not South Carolina, to carry shoe companies such as  Brooks---Hoka----Newton---Altra---Salming----Lems   and we continue to lead the way with new shoe companies that are not the traditional but have a great place.  We understand the unique needs of our fellow Charlestonians and  want to give all the choices we can.</p>
+ <p>Our goal at The Foot Store is to fit our customers with the best shoe for their goals and daily life.  The specially trained staff work to provide a great one on one experience and to educate our customers on their individual needs.  We have shoes and accessories for a range of activitylevels and all body types.  No foot is the same.  So come on in and be fitted today!!  Here at The Foot Store, Feet Come First.</p>
 </div>
 <div class="row carolynRow">
  <h2>Carolyn Varndell</h2>
- <p></p>
- <img src="images/Carolyn.png" alt="" class="img-rounded">
+ <img src="images/rsz_carolyn.png" alt="" class="img-circle">
+ <p>Carolyn was born and raised in Baltimore, Maryland.   After a BS degree from James Madison University and then a MA degree from Michigan State University (Go Green) she spent 18 years working (in Michigan) in Physical Therapy in an out-patient clinic and building Athletic Training programs in the area high schools.</p>
+
+ <p>It was in Michigan that she became involved with a local running store (Playmakers)……sending many patients and athletes to that store for shoes and orthotics.   After seeing how much better people were getting when in the correct shoes and support she decided to work with Playmakers and learn the shoes and products to help prevent injuries and educate runners and athletes about exercises and mechanics to allow for less injury and more activity.  So she went to Dr Sholls, and became a Certified Pedorthist.</p>
+
+ <p>The opportunity came to purchase The Foot Store and so over the last 15 years she has been training staff and and educating customers about shoes and other products to keep people walking, running, working and active.. </p>
+
+ <p>Carolyn has been very active with the ATP over the last 30 years working with players on the Pro Tour at numerous US tournaments.  This involved working with players pre and post matches and practices on treatment and stretching.</p>
+
+ <p>When not working, Carolyn enjoys walking, the beach, history of Charleston,  and kayaking.  And of course eating lots of seafood.</p>
 </div>
 <div class="row staffHeader">
  <h2>The Staff</h2>
 </div>
 <div class="row">
-<div class="col-lg-12 staffBlock">
+<div class="col-lg-12 col-md-12 staffBlock">
  <div ng-repeat="people in staff">
-  <div class="col-lg-4 staffCards">
+  <div class="col-lg-4 col-md-4 col-sm-4">
+   <div class="staffCards" ng-mouseenter="people.isHover=!people.isHover" ng-mouseleave="people.isHover=!people.isHover">
    <img src="{{people.image}}" alt="" class="img-rounded img-responsive">
+   <div class="staffInfo" ng-show="people.isHover">
+    <h3>{{people.name}}</h3>
+    <p>{{people.info}}</p>
+   </div>
+  </div>
   </div>
  </div>
 </div>

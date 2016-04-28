@@ -6,8 +6,7 @@
 }
 .goodFormClassWrap{
  border:2px solid #134080;
- margin-top:10px;
- border-radius:3%;
+ border-radius:1%;
  text-align:center;
  margin-bottom:10px;
 
@@ -19,6 +18,23 @@
    font-size:29px;
   }
  }
+ .fsnGFR{
+  text-align:center;
+  > h3{
+   background:#134080;
+   margin-top:15px;
+   color:white;
+  }
+
+ }
+ .fsGFR{
+  text-align:center;
+   > h3{
+   background:#134080;
+   margin-top:15px;
+   color:white;
+  }
+ }
  .goodFormRow2{
   color:#134080;
   .priceCol{
@@ -26,4 +42,16 @@
    padding-left:0px;
   }
  }
+}
+.gfrIMG{
+ width:50%;
+ margin-left:18%;
+}
+@media screen and (max-width:992px) {
+.gfrIMG{
+ display:none;
+}
+.videoCenter{
+ text-align:center;
+}
 }

@@ -9,9 +9,6 @@ body{
  background:white;
  font-family:'Lato', sans-serif;
 }
-.contentDivWrapper{
- box-shadow:1px 1px 5px black;
-}
 .contentDiv{
  padding:10px;
 }
@@ -134,4 +131,10 @@ body{
  display:inline-block;
  width:300px;
  height:200px;
+}
+
+@media screen and (max-width:992px){
+.center{
+ text-align:center
+}
 }

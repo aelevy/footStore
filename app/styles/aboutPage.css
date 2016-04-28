@@ -8,7 +8,8 @@
 .carolynRow {
   color: #134080; }
   .carolynRow img {
-    float: right; }
+    float: left;
+    padding: 10px; }
 
 .staffHeader {
   text-align: center;
@@ -18,4 +19,16 @@
   text-align: center; }
 
 .staffCards {
-  margin-top: 10px; }
+  margin-top: 10px;
+  position: relative;
+  max-width: 250px; }
+  .staffCards .staffInfo {
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 3%;
+    background-color: black;
+    opacity: .8;
+    color: white;
+    overflow: scroll; }
