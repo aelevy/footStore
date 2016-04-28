@@ -1,0 +1,35 @@
+<div class="row">
+ <div ng-controller="homePageCtrl">
+<<<<<<< HEAD:app/views/homePage.html
+  <div id="carouselWrapper">
+=======
+  <div style="height: 305px">
+>>>>>>> 0d7d77f794634ed7c9df7fa4df6d07114b98a38a:views/homePage.html
+   <carousel interval="myInterval">
+    <slide ng-repeat="slide in slides" active="slide.active">
+     <img ng-src="{{slide.image}}" style="margin:auto;">
+     <div class="carousel-caption">
+      <h4>Slide {{$index}}</h4>
+      <p>{{slide.text}}</p>
+     </div>
+    </slide>
+   </carousel>
+  </div>
+ </div>
+</div>
+
+<div class="row">
+ <div class="mainSection">
+ <div class="col-lg-4 col-md-4 col-sm-12" ng-repeat="action in callToActions" ng-mouseenter="hover = true"
+ ng-mouseleave="hover = false">
+  <div class="callToAction">
+   <a href="{{action.route}}">
+    <img src="images/CTA'S/{{action.image}}" alt="" class="img-rounded">
+    <div class="ctaText" ng-class="{ctaOpaque: hover}">
+     <h2>{{action.text}}</h2>
+   </div>
+  </a>
+  </div>
+ </div>
+</div>
+</div>
